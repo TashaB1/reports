@@ -21,7 +21,9 @@
         class="com.tashad16a.gmail.JazzMusic">
     </bean>
 
-    <bean id="musicPlayer" class="com.tashad16a.gmail.MusicPlayer">
+    <bean id="musicPlayer"
+          class="com.tashad16a.gmail.MusicPlayer"
+          scope="prototype">
         <property name="musicList">
             <list>
                 <ref bean="musicRockBean"/>
