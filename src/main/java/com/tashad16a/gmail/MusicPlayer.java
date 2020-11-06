@@ -28,17 +28,6 @@ public class MusicPlayer {
         this.name = name;
     }
 
-    //IoS
-    /*  public MusicPlayer(Music music){
-        this.music=music;
-    } */
-
-    public MusicPlayer(){}
-
-    public List<Music> getMusicList() {
-        return musicList;
-    }
-
     public void setMusicList(List<Music> musicList) {
         this.musicList = musicList;
     }

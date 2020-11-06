@@ -21,19 +21,14 @@
         class="com.tashad16a.gmail.JazzMusic">
     </bean>
 
-    <bean id="listMusic" class="java.util.ArrayList">
-        <constructor-arg>
-            <list>
-                    <ref bean="musicRockBean"/>
-                    <ref bean="musicJazzBean"/>
-                    <ref bean="musicClassicalBean"/>
-            </list>
-        </constructor-arg>
-    </bean>
-
-
     <bean id="musicPlayer" class="com.tashad16a.gmail.MusicPlayer">
-        <property name="musicList" ref="listMusic"/>
+        <property name="musicList">
+            <list>
+                <ref bean="musicRockBean"/>
+                <ref bean="musicJazzBean"/>
+                <ref bean="musicClassicalBean"/>
+            </list>
+        </property>
 
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
