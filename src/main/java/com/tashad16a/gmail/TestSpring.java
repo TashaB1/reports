@@ -16,7 +16,8 @@ public class TestSpring {
         //MusicPlayer musicPlayer = new MusicPlayer(music);
 
         MusicPlayer firstMusicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
-       // MusicPlayer secondMusicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
+        MusicPlayer secondMusicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
+        MusicPlayer thirdMusicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
 
        // boolean comparison = firstMusicPlayer == secondMusicPlayer;
 
