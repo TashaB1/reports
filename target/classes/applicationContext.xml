@@ -14,14 +14,16 @@
     </bean>
 
     <bean id="musicClassicalBean"
-        class="com.tashad16a.gmail.ClassicalMusic">
+        class="com.tashad16a.gmail.ClassicalMusic"
+        init-method="doMyInit"
+        destroy-method="doMyDestroy">
     </bean>
 
     <bean id="musicJazzBean"
         class="com.tashad16a.gmail.JazzMusic">
     </bean>
 
-    <bean id="musicPlayer"
+    <!--<bean id="musicPlayer"
           class="com.tashad16a.gmail.MusicPlayer"
           scope="prototype">
         <property name="musicList">
@@ -34,6 +36,6 @@
 
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
+    </bean>-->
 
 </beans>
