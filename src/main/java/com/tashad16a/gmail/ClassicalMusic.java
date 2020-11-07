@@ -5,12 +5,12 @@ package com.tashad16a.gmail;
  */
 public class ClassicalMusic implements Music {
 
-   public void doMyInit(){
-       System.out.println("Doing my initialization");
-   }
+    public void doMyInit(){
+        System.out.println("Doing my initialization (Classical)");
+    }
 
     public void  doMyDestroy(){
-        System.out.println("Doing my destruction");
+        System.out.println("Doing my destruction (Classical)");
     }
 
     @Override
