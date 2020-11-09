@@ -1,8 +1,12 @@
 package com.tashad16a.gmail;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Created by TashaD on 02.11.2020.
  */
+
+@Component("musicJazzBean")
 public class JazzMusic implements Music {
 
     public void doMyInit(){

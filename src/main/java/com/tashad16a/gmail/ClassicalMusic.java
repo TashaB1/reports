@@ -1,15 +1,13 @@
 package com.tashad16a.gmail;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Created by TashaD on 21.10.2020.
  */
+
+@Component("musicClassicalBean")
 public class ClassicalMusic implements Music {
-
-    private ClassicalMusic(){}
-
-    public static ClassicalMusic getClassicalMusic() {
-        return new ClassicalMusic();
-    }
 
     public void doMyInit(){
         System.out.println("Doing my initialization (Classical)");
