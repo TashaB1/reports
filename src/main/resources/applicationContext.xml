@@ -19,7 +19,8 @@
     <bean id="musicClassicalBean"
         class="com.tashad16a.gmail.ClassicalMusic"
         init-method="doMyInit"
-        destroy-method="doMyDestroy">
+        destroy-method="doMyDestroy"
+        factory-method="getClassicalMusic">
     </bean>
 
     <bean id="musicJazzBean"
