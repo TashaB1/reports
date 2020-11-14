@@ -15,7 +15,7 @@ public class TestSpring {
         //Music music = context.getBean("musicBean", Music.class);
         //MusicPlayer musicPlayer = new MusicPlayer(music);
 
-        MusicPlayer musicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
+    //    MusicPlayer musicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
        // MusicPlayer secondMusicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
        // MusicPlayer thirdMusicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
 
@@ -31,10 +31,13 @@ public class TestSpring {
         //System.out.println(firstMusicPlayer.getVolume());
         //System.out.println(secondMusicPlayer.getVolume());
 
-        musicPlayer.playMusic();
+     //   musicPlayer.playMusic();
 
       //  System.out.println(musicPlayer.getName());
       //  System.out.println(musicPlayer.getVolume());
+
+        Computer computer = context.getBean("computer", Computer.class);
+        System.out.println(computer);
 
         context.close();
     }

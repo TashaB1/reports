@@ -14,6 +14,8 @@ public class MusicPlayer {
     @Autowired
     private List<Music> musicList = new ArrayList<>();
 
+    private String musicPlayList = "";
+
     /*private String name;
     private int volume;
 
@@ -37,9 +39,10 @@ public class MusicPlayer {
         this.musicList = musicList;
     }
 
-    public void playMusic(){
+    public String playMusic(){
         for (Music musicPlay: musicList) {
-          System.out.println("Playing:" + musicPlay.getSong());
+          musicPlayList = musicPlayList +  "Playing:" + musicPlay.getSong() + "; ";
         }
+        return musicPlayList;
     }
 }
