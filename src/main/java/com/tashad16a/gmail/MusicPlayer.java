@@ -11,6 +11,7 @@ import java.util.List;
  */
 @Component
 public class MusicPlayer {
+    @Autowired
     private List<Music> musicList = new ArrayList<>();
 
     /*private String name;
@@ -32,7 +33,6 @@ public class MusicPlayer {
         this.name = name;
     }*/
 
-    @Autowired
     public void setMusicList(List<Music> musicList) {
         this.musicList = musicList;
     }
