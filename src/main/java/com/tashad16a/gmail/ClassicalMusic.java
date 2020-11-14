@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 @Component("musicClassicalBean")
 public class ClassicalMusic implements Music {
 
-    public void doMyInit(){
+ /*   public void doMyInit(){
         System.out.println("Doing my initialization (Classical)");
     }
 
     public void  doMyDestroy(){
         System.out.println("Doing my destruction (Classical)");
-    }
+    }*/
 
     @Override
     public String getSong() {

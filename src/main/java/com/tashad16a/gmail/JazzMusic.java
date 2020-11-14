@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 @Component("musicJazzBean")
 public class JazzMusic implements Music {
 
-    public void doMyInit(){
+  /*  public void doMyInit(){
         System.out.println("Doing my initialization (Jazz)");
     }
 
     public void  doMyDestroy(){
         System.out.println("Doing my destruction (Jazz)");
-    }
+    }*/
 
     @Override
     public String getSong() {
