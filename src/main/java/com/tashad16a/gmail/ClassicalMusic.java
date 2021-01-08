@@ -1,5 +1,6 @@
 package com.tashad16a.gmail;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 /**
@@ -7,6 +8,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Component("musicClassicalBean")
+@Scope("prototype")
 public class ClassicalMusic implements Music {
 
  /*   public void doMyInit(){
