@@ -40,9 +40,7 @@ public class TestSpring {
       //  System.out.println(computer);
 
         ClassicalMusic classicalMusic1 = context.getBean("musicClassicalBean", ClassicalMusic.class);
-        ClassicalMusic classicalMusic2 = context.getBean("musicClassicalBean", ClassicalMusic.class);
 
-        System.out.println(classicalMusic1 == classicalMusic2);
         context.close();
     }
 }
